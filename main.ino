@@ -30,7 +30,7 @@ void setup() {
   
   // Verifica que el sensor pulsometro este funcionando
   if (!particleSensor.begin(Wire, I2C_SPEED_STANDARD)) {
-    Serial.println("Error al iniciar MAX30102");
+    Serial.println("Error al iniciar el sensor MAX30102");
     lcd.setCursor(0, 1);
     lcd.print("MAX30102 Error");
     while (1);
