@@ -39,7 +39,7 @@ void setup() {
 
   // Verifica que el sensor acelerometro este funcionando
   if (!mpu.begin()) {
-    Serial.println("Error al iniciar MPU6050");
+    Serial.println("Error al iniciar el sensor MPU6050");
     lcd.setCursor(0, 1);
     lcd.print("MPU6050 Error");
     while (1);
